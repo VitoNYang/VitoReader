@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F15D7471E829EFA0045F11A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15D7461E829EFA0045F11A /* AppDelegate.swift */; };
+		3F15D7491E829EFA0045F11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15D7481E829EFA0045F11A /* ViewController.swift */; };
+		3F15D74C1E829EFA0045F11A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F15D74A1E829EFA0045F11A /* Main.storyboard */; };
+		3F15D74E1E829EFA0045F11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15D74D1E829EFA0045F11A /* Assets.xcassets */; };
+		3F15D7511E829EFA0045F11A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F15D74F1E829EFA0045F11A /* LaunchScreen.storyboard */; };
+		3F15D75C1E829EFA0045F11A /* VitoReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15D75B1E829EFA0045F11A /* VitoReaderTests.swift */; };
+		3F15D7671E829EFA0045F11A /* VitoReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15D7661E829EFA0045F11A /* VitoReaderUITests.swift */; };
+		3F15D77A1E829F600045F11A /* 完美世界.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F15D7791E829F600045F11A /* 完美世界.txt */; };
+		3F9C3C521E82D68800530D43 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9C3C511E82D68800530D43 /* StreamReader.swift */; };
+		3F9C3C541E82DB5800530D43 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9C3C531E82DB5800530D43 /* TextCell.swift */; };
+		3FCE4EC21E82ACCB003F5101 /* utf8_no_bom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE4EBC1E82ACCB003F5101 /* utf8_no_bom.txt */; };
+		3FCE4EC31E82ACCB003F5101 /* utf8_with_bom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE4EBD1E82ACCB003F5101 /* utf8_with_bom.txt */; };
+		3FCE4EC41E82ACCB003F5101 /* utf16BE_no_bom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE4EBE1E82ACCB003F5101 /* utf16BE_no_bom.txt */; };
+		3FCE4EC51E82ACCB003F5101 /* utf16BE_with_bom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE4EBF1E82ACCB003F5101 /* utf16BE_with_bom.txt */; };
+		3FCE4EC61E82ACCB003F5101 /* utf16LE_no_bom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE4EC01E82ACCB003F5101 /* utf16LE_no_bom.txt */; };
+		3FCE4EC71E82ACCB003F5101 /* utf16LE_with_bom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE4EC11E82ACCB003F5101 /* utf16LE_with_bom.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F15D7581E829EFA0045F11A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F15D73B1E829EFA0045F11A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F15D7421E829EFA0045F11A;
+			remoteInfo = VitoReader;
+		};
+		3F15D7631E829EFA0045F11A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F15D73B1E829EFA0045F11A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F15D7421E829EFA0045F11A;
+			remoteInfo = VitoReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F15D7431E829EFA0045F11A /* VitoReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitoReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F15D7461E829EFA0045F11A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F15D7481E829EFA0045F11A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F15D74B1E829EFA0045F11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F15D74D1E829EFA0045F11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F15D7501E829EFA0045F11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F15D7521E829EFA0045F11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F15D7571E829EFA0045F11A /* VitoReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VitoReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F15D75B1E829EFA0045F11A /* VitoReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitoReaderTests.swift; sourceTree = "<group>"; };
+		3F15D75D1E829EFA0045F11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F15D7621E829EFA0045F11A /* VitoReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VitoReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F15D7661E829EFA0045F11A /* VitoReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitoReaderUITests.swift; sourceTree = "<group>"; };
+		3F15D7681E829EFA0045F11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F15D7791E829F600045F11A /* 完美世界.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "完美世界.txt"; sourceTree = "<group>"; };
+		3F9C3C511E82D68800530D43 /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
+		3F9C3C531E82DB5800530D43 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		3FCE4EBC1E82ACCB003F5101 /* utf8_no_bom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf8_no_bom.txt; sourceTree = "<group>"; };
+		3FCE4EBD1E82ACCB003F5101 /* utf8_with_bom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf8_with_bom.txt; sourceTree = "<group>"; };
+		3FCE4EBE1E82ACCB003F5101 /* utf16BE_no_bom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf16BE_no_bom.txt; sourceTree = "<group>"; };
+		3FCE4EBF1E82ACCB003F5101 /* utf16BE_with_bom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf16BE_with_bom.txt; sourceTree = "<group>"; };
+		3FCE4EC01E82ACCB003F5101 /* utf16LE_no_bom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf16LE_no_bom.txt; sourceTree = "<group>"; };
+		3FCE4EC11E82ACCB003F5101 /* utf16LE_with_bom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf16LE_with_bom.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F15D7401E829EFA0045F11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F15D7541E829EFA0045F11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F15D75F1E829EFA0045F11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F15D73A1E829EFA0045F11A = {
+			isa = PBXGroup;
+			children = (
+				3F15D7451E829EFA0045F11A /* VitoReader */,
+				3F15D75A1E829EFA0045F11A /* VitoReaderTests */,
+				3F15D7651E829EFA0045F11A /* VitoReaderUITests */,
+				3F15D7441E829EFA0045F11A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F15D7441E829EFA0045F11A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D7431E829EFA0045F11A /* VitoReader.app */,
+				3F15D7571E829EFA0045F11A /* VitoReaderTests.xctest */,
+				3F15D7621E829EFA0045F11A /* VitoReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F15D7451E829EFA0045F11A /* VitoReader */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D7461E829EFA0045F11A /* AppDelegate.swift */,
+				3F9C3C511E82D68800530D43 /* StreamReader.swift */,
+				3F15D7741E829F020045F11A /* ViewController */,
+				3F15D7771E829F260045F11A /* View */,
+				3F15D7751E829F0B0045F11A /* Storyboard */,
+				3F15D7781E829F2F0045F11A /* Resource */,
+				3F15D7761E829F170045F11A /* Support Files */,
+			);
+			path = VitoReader;
+			sourceTree = "<group>";
+		};
+		3F15D75A1E829EFA0045F11A /* VitoReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D75B1E829EFA0045F11A /* VitoReaderTests.swift */,
+				3F15D75D1E829EFA0045F11A /* Info.plist */,
+			);
+			path = VitoReaderTests;
+			sourceTree = "<group>";
+		};
+		3F15D7651E829EFA0045F11A /* VitoReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D7661E829EFA0045F11A /* VitoReaderUITests.swift */,
+				3F15D7681E829EFA0045F11A /* Info.plist */,
+			);
+			path = VitoReaderUITests;
+			sourceTree = "<group>";
+		};
+		3F15D7741E829F020045F11A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D7481E829EFA0045F11A /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3F15D7751E829F0B0045F11A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D74A1E829EFA0045F11A /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		3F15D7761E829F170045F11A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F15D74D1E829EFA0045F11A /* Assets.xcassets */,
+				3F15D74F1E829EFA0045F11A /* LaunchScreen.storyboard */,
+				3F15D7521E829EFA0045F11A /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		3F15D7771E829F260045F11A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9C3C531E82DB5800530D43 /* TextCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F15D7781E829F2F0045F11A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3FCE4EBC1E82ACCB003F5101 /* utf8_no_bom.txt */,
+				3FCE4EBD1E82ACCB003F5101 /* utf8_with_bom.txt */,
+				3FCE4EBE1E82ACCB003F5101 /* utf16BE_no_bom.txt */,
+				3FCE4EBF1E82ACCB003F5101 /* utf16BE_with_bom.txt */,
+				3FCE4EC01E82ACCB003F5101 /* utf16LE_no_bom.txt */,
+				3FCE4EC11E82ACCB003F5101 /* utf16LE_with_bom.txt */,
+				3F15D7791E829F600045F11A /* 完美世界.txt */,
+			);
+			name = Resource;
+			path = Rescoure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F15D7421E829EFA0045F11A /* VitoReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F15D76B1E829EFA0045F11A /* Build configuration list for PBXNativeTarget "VitoReader" */;
+			buildPhases = (
+				3F15D73F1E829EFA0045F11A /* Sources */,
+				3F15D7401E829EFA0045F11A /* Frameworks */,
+				3F15D7411E829EFA0045F11A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VitoReader;
+			productName = VitoReader;
+			productReference = 3F15D7431E829EFA0045F11A /* VitoReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F15D7561E829EFA0045F11A /* VitoReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F15D76E1E829EFA0045F11A /* Build configuration list for PBXNativeTarget "VitoReaderTests" */;
+			buildPhases = (
+				3F15D7531E829EFA0045F11A /* Sources */,
+				3F15D7541E829EFA0045F11A /* Frameworks */,
+				3F15D7551E829EFA0045F11A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F15D7591E829EFA0045F11A /* PBXTargetDependency */,
+			);
+			name = VitoReaderTests;
+			productName = VitoReaderTests;
+			productReference = 3F15D7571E829EFA0045F11A /* VitoReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F15D7611E829EFA0045F11A /* VitoReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F15D7711E829EFA0045F11A /* Build configuration list for PBXNativeTarget "VitoReaderUITests" */;
+			buildPhases = (
+				3F15D75E1E829EFA0045F11A /* Sources */,
+				3F15D75F1E829EFA0045F11A /* Frameworks */,
+				3F15D7601E829EFA0045F11A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F15D7641E829EFA0045F11A /* PBXTargetDependency */,
+			);
+			name = VitoReaderUITests;
+			productName = VitoReaderUITests;
+			productReference = 3F15D7621E829EFA0045F11A /* VitoReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F15D73B1E829EFA0045F11A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Vito;
+				TargetAttributes = {
+					3F15D7421E829EFA0045F11A = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7QWPB348SW;
+						ProvisioningStyle = Automatic;
+					};
+					3F15D7561E829EFA0045F11A = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7QWPB348SW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F15D7421E829EFA0045F11A;
+					};
+					3F15D7611E829EFA0045F11A = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7QWPB348SW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F15D7421E829EFA0045F11A;
+					};
+				};
+			};
+			buildConfigurationList = 3F15D73E1E829EFA0045F11A /* Build configuration list for PBXProject "VitoReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F15D73A1E829EFA0045F11A;
+			productRefGroup = 3F15D7441E829EFA0045F11A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F15D7421E829EFA0045F11A /* VitoReader */,
+				3F15D7561E829EFA0045F11A /* VitoReaderTests */,
+				3F15D7611E829EFA0045F11A /* VitoReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F15D7411E829EFA0045F11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCE4EC61E82ACCB003F5101 /* utf16LE_no_bom.txt in Resources */,
+				3F15D7511E829EFA0045F11A /* LaunchScreen.storyboard in Resources */,
+				3FCE4EC41E82ACCB003F5101 /* utf16BE_no_bom.txt in Resources */,
+				3FCE4EC21E82ACCB003F5101 /* utf8_no_bom.txt in Resources */,
+				3F15D77A1E829F600045F11A /* 完美世界.txt in Resources */,
+				3FCE4EC71E82ACCB003F5101 /* utf16LE_with_bom.txt in Resources */,
+				3F15D74E1E829EFA0045F11A /* Assets.xcassets in Resources */,
+				3FCE4EC31E82ACCB003F5101 /* utf8_with_bom.txt in Resources */,
+				3F15D74C1E829EFA0045F11A /* Main.storyboard in Resources */,
+				3FCE4EC51E82ACCB003F5101 /* utf16BE_with_bom.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F15D7551E829EFA0045F11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F15D7601E829EFA0045F11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F15D73F1E829EFA0045F11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9C3C521E82D68800530D43 /* StreamReader.swift in Sources */,
+				3F15D7491E829EFA0045F11A /* ViewController.swift in Sources */,
+				3F9C3C541E82DB5800530D43 /* TextCell.swift in Sources */,
+				3F15D7471E829EFA0045F11A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F15D7531E829EFA0045F11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F15D75C1E829EFA0045F11A /* VitoReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F15D75E1E829EFA0045F11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F15D7671E829EFA0045F11A /* VitoReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F15D7591E829EFA0045F11A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F15D7421E829EFA0045F11A /* VitoReader */;
+			targetProxy = 3F15D7581E829EFA0045F11A /* PBXContainerItemProxy */;
+		};
+		3F15D7641E829EFA0045F11A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F15D7421E829EFA0045F11A /* VitoReader */;
+			targetProxy = 3F15D7631E829EFA0045F11A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F15D74A1E829EFA0045F11A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F15D74B1E829EFA0045F11A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F15D74F1E829EFA0045F11A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F15D7501E829EFA0045F11A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F15D7691E829EFA0045F11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F15D76A1E829EFA0045F11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F15D76C1E829EFA0045F11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7QWPB348SW;
+				INFOPLIST_FILE = VitoReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.VitoReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F15D76D1E829EFA0045F11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7QWPB348SW;
+				INFOPLIST_FILE = VitoReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.VitoReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F15D76F1E829EFA0045F11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7QWPB348SW;
+				INFOPLIST_FILE = VitoReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.VitoReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VitoReader.app/VitoReader";
+			};
+			name = Debug;
+		};
+		3F15D7701E829EFA0045F11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7QWPB348SW;
+				INFOPLIST_FILE = VitoReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.VitoReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VitoReader.app/VitoReader";
+			};
+			name = Release;
+		};
+		3F15D7721E829EFA0045F11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7QWPB348SW;
+				INFOPLIST_FILE = VitoReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.VitoReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VitoReader;
+			};
+			name = Debug;
+		};
+		3F15D7731E829EFA0045F11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7QWPB348SW;
+				INFOPLIST_FILE = VitoReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.VitoReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VitoReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F15D73E1E829EFA0045F11A /* Build configuration list for PBXProject "VitoReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F15D7691E829EFA0045F11A /* Debug */,
+				3F15D76A1E829EFA0045F11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F15D76B1E829EFA0045F11A /* Build configuration list for PBXNativeTarget "VitoReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F15D76C1E829EFA0045F11A /* Debug */,
+				3F15D76D1E829EFA0045F11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F15D76E1E829EFA0045F11A /* Build configuration list for PBXNativeTarget "VitoReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F15D76F1E829EFA0045F11A /* Debug */,
+				3F15D7701E829EFA0045F11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F15D7711E829EFA0045F11A /* Build configuration list for PBXNativeTarget "VitoReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F15D7721E829EFA0045F11A /* Debug */,
+				3F15D7731E829EFA0045F11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F15D73B1E829EFA0045F11A /* Project object */;
+}
